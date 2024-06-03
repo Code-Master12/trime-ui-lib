@@ -147,6 +147,14 @@ function Kavo:ToggleUI()
     end
 end
 
+function Kavo:HideUI()
+    game.CoreGui[LibName].Enabled = false
+end
+
+function Kavo:ShowUI()
+    game.CoreGui[LibName].Enabled = true
+end
+
 function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
