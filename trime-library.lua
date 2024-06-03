@@ -1,3 +1,5 @@
+local Kavo = {}
+
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
 local input = game:GetService("UserInputService")
@@ -143,14 +145,6 @@ function Kavo:ToggleUI()
     else
         game.CoreGui[LibName].Enabled = true
     end
-end
-
-function Kavo:HideUI()
-    game.CoreGui[LibName].Enabled = false
-end
-
-function Kavo:ShowUI()
-    game.CoreGui[LibName].Enabled = true
 end
 
 function Kavo.CreateLib(kavName, themeList)
